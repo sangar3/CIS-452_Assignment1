@@ -8,22 +8,18 @@ public abstract class ForceSensitive
 
 }
 
-public class LightSide: ForceSensitive, CanForceHeal, CanForcePush
+public class LightSide: ForceSensitive
 {
     public double forceStrength;
     public string Race;
 
     public override void LightsaberAttack()
     {
-        Debug.Log("vroom");
+        Debug.Log("vroom vroom vroom ");
     }
-    public void ForcePush()
+    void ForcePowers()
     {
-        Debug.Log("*Push");
-    }
-    public void ForceHeal()
-    {
-        Debug.Log("*heal");
+        Debug.Log("The force is with you");
     }
 }
 
@@ -31,14 +27,14 @@ public class LightSide: ForceSensitive, CanForceHeal, CanForcePush
 
 
 
-public class DarkSide : ForceSensitive, CanForceChoke, CanForceLighting
+public class DarkSide : ForceSensitive
 {
     public double forceStrength;
     public string Race;
 
     public override void LightsaberAttack()
     {
-        Debug.Log("vroom");
+        Debug.Log("vroom vroom ");
     }
     public void ForceChoke()
     {
@@ -48,4 +44,15 @@ public class DarkSide : ForceSensitive, CanForceChoke, CanForceLighting
     {
         Debug.Log("*Lighting");
     }
+}
+
+public class Neutralside : ForceSensitive 
+{
+    public double forceStrength;
+    public string Race;
+    public override void LightsaberAttack()
+    {
+        Debug.Log("vroom vroom vroom ");
+    }
+
 }

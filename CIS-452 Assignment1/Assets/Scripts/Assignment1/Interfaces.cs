@@ -2,23 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface CanForcePush
+public interface CanForcePowers
 {
-    void ForcePush();
+    void ForcePowers();
 }
 
-public interface CanForceHeal
+public interface ChooseLightsabercolor
 {
-    void ForceHeal();
+    void Lightsabercolor();
 }
 
-public interface CanForceChoke
-{
-    void ForceChoke();
-}
 
-public interface CanForceLighting
-{
-    void ForceLighting();
-}
 

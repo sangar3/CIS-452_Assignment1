@@ -28,7 +28,7 @@ namespace OOPReview
 
 
             //Part 2: a polymorphic array of enemies each die
-            /*
+            
             enemies[0] = new EnemyBoxer();
             enemies[1] = new EnemyRobot();
             enemies[2] = new EnemySpider();
@@ -44,10 +44,10 @@ namespace OOPReview
 
                 enemy.Die();
             }
-            */
+            
 
             //Part 3: a polymorphic list of enemies each die
-            /*
+            
 
             //Add 9 enemies to the list
             for (int i = 0; i < 3; i++)
@@ -72,7 +72,7 @@ namespace OOPReview
                 if (enemy == null) { break; }
                 enemy.Die();
             }
-            */
+            
 
             //Part 4: a polymorphic list of enemies that can punch
             
