@@ -8,7 +8,7 @@ public abstract class ForceSensitive
 
 }
 
-public class LightSide: ForceSensitive
+public class LightSide: ForceSensitive, CanForcePowers, ChooseLightsabercolor
 {
     public double forceStrength;
     public string Race;
@@ -17,9 +17,13 @@ public class LightSide: ForceSensitive
     {
         Debug.Log("vroom vroom vroom ");
     }
-    void ForcePowers()
+    public void ForcePowers()
     {
         Debug.Log("The force is with you");
+    }
+    public void Lightsabercolor()
+    {
+        Debug.Log("choose wisley");
     }
 }
 
@@ -27,7 +31,7 @@ public class LightSide: ForceSensitive
 
 
 
-public class DarkSide : ForceSensitive
+public class DarkSide : ForceSensitive, CanForcePowers, ChooseLightsabercolor
 {
     public double forceStrength;
     public string Race;
@@ -36,17 +40,17 @@ public class DarkSide : ForceSensitive
     {
         Debug.Log("vroom vroom ");
     }
-    public void ForceChoke()
+    public void ForcePowers()
     {
-        Debug.Log("*Choke");
+        Debug.Log("The force is with you");
     }
-    public void ForceLighting()
+    public void Lightsabercolor()
     {
-        Debug.Log("*Lighting");
+        Debug.Log("choose wisley");
     }
 }
 
-public class Neutralside : ForceSensitive 
+public class Neutralside : ForceSensitive, CanForcePowers, ChooseLightsabercolor
 {
     public double forceStrength;
     public string Race;
@@ -54,5 +58,12 @@ public class Neutralside : ForceSensitive
     {
         Debug.Log("vroom vroom vroom ");
     }
-
+   public  void ForcePowers()
+    {
+        Debug.Log("The force is with you");
+    }
+    public void Lightsabercolor()
+    {
+        Debug.Log("choose wisley");
+    }
 }

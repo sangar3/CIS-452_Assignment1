@@ -40,8 +40,10 @@ public class GameManager : MonoBehaviour
 
         for (int i = 0; i < 1; i++)
         {
-          
-       
+            
+            ForcePowersinterface.Add(new Neutralside());
+            ChooseLightsabercolorinterface.Add(new Neutralside());
+
         }
 
 
@@ -58,7 +60,14 @@ public class GameManager : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-           
+           foreach(CanForcePowers forcepowers in ForcePowersinterface)
+            {
+                forcepowers.ForcePowers();
+            }
+           foreach (ChooseLightsabercolor color in ChooseLightsabercolorinterface)
+            {
+                color.Lightsabercolor();
+            }
         }
 
     }
