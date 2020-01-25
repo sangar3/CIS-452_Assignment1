@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+		 * (Santiago Garcia II)
+		 * (GameManager)
+		 * (Assignment 1)
+		 * (Creates instances when the buttons 1 or 2 are pressed)
+	*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+		 * (Santiago Garcia II)
+		 * (ForceSensitive)
+		 * (Assignment1)
+		 * (Creates abstract class and two subclasses)
+	*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

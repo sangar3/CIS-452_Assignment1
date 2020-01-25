@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+		 * (Santiago Garcia II)
+		 * (interface)
+		 * (Assignment 1)
+		 * (Creates two interface)
+	*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
